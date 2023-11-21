@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Poppins:wght@200&family=Roboto:ital,wght@1,300&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+
+body {
+    background-color: #202124;
+    height: 100vh;
+    
+}
+
+header {
+    display: flex;
+    justify-content: end;
+    height: 60px;
+    /* background-color: teal; */
+    padding: 0 18px;
+}
+
+header .options {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    /* background-color: indigo; */
+}
+
+header .options a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+header .options a img {
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+}
+
+.dots-logo {
+    display: inline-block;
+    background-image: url(Images/CuadritosPuntos.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 24px;
+    height: 24px;
+}
+/*Lupa*/
+.search-logo {
+    display: inline-block;
+    width: 200px;
+    height: 20px;
+    background-image: url(Images/search-logo.svg);
+    background-repeat: no-repeat;
+    background-position: left;
+}
+.micro-logo {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background-image: url(Images/micro-logo.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.camera-logo {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background-image: url(Images/camera-logo.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+main {
+    height: calc(100% - 60px - 90px);
+    display: flex;
+    justify-content: center;
+    align-items:flex-start
+}
+
+main .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    /* background-color: indigo; */
+}
+main .container figure{
+    height: 92px;
+}
+main .container figure img {
+    height: 100%;
+}
+main .container .searcher {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    height: 40px;
+    width: 450px;
+    padding: 8px 12px;
+    border: 1px solid gray;
+    border-radius: 24px;
+}
+main .container .searcher:hover {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    height: 40px;
+    width: 450px;
+    padding: 8px 12px;
+    border: 1px solid #343434	;
+    background-color: #343434	;
+    border-radius: 24px; 
+}
+/*Boton del input*/
+main .container #input-search button {
+    border: none;
+    background-color: transparent;
+}
+main .container #input-search input {
+    width: 100%;
+    border: none;
+    color: whitesmoke;
+    background-color: transparent;
+}
+/*main .container #input-search input:hover {
+    width: 100%;
+    border: none;
+    color: whitesmoke;
+    background-color: white;
+}*/
+/*2 botones*/
+main .container .btn-search {
+    display: flex;
+    gap: 10px;
+}
+main .container .btn-search #search{
+    border: none;
+    border-radius: 4px;
+    background-color: #303134;
+    padding: 12px;
+    color: whitesmoke;
+}
+main .container .btn-search #search:hover{
+    border: none;
+    border-radius: 4px;
+    background-color: #303134;
+    padding: 12px;
+    color: whitesmoke;
+    border: 1px solid grey;
+}
+main .container .btn-search #lucky{
+    border: none;
+    border-radius: 4px;
+    background-color: #303134;
+    padding: 12px;
+    color: whitesmoke;
+}
+main .container .btn-search #lucky:hover{
+    border: none;
+    border-radius: 4px;
+    background-color: #303134;
+    padding: 12px;
+    color: whitesmoke;
+    border: 1px solid grey;
+}
+/*Hasta aqui termina 2 botones*/
+
+main .container p {
+    font-size: small;
+    color: whitesmoke;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    height: 90px;
+    background-color: #171717;
+}
+footer section {
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    height: 50%;
+    color: #999da2;
+}
+footer section.more-info {
+    border-top: #3b3b3b solid 1px;
+    display: flex;
+    justify-content: space-between;
+}
+footer section.more-info div {
+    display: flex;
+    gap: 18px;
+}
+footer section.more-info div a {
+    color: #999da2;
+    text-decoration: none;
+}
